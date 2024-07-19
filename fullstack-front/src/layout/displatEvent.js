@@ -18,7 +18,7 @@ const DisplayEvent = () => {
             const response=await axios.get('http://localhost:8080/getEvent');
             console.log('fetched events:',response.data);
             setEvents(response.data);
-
+            setFilteredEventNames(response.data.map(event => ({ id: event.id, eventName: event.eventName })));
             
         }catch(error){
             console.error('Error fetching events:',error);
@@ -29,14 +29,16 @@ const DisplayEvent = () => {
     return(
         <div>
             <h1>Event List</h1>
-            {filteredEventNames.length===0?(
+            {filteredEventNames.length=== 0?(
                 <div>No events found</div>
             ) : (
                 <ul>
                   {filteredEventNames.map((event)=>(
-                    <li key={event.id}>
+                  <li key={event.id}>
 
-<span>{event.eventName}</span>
+            <span>{event.eventName}</span>
+
+            
                         </li>
 
 

@@ -25,6 +25,9 @@ const Navbar = () => {
 
  
       <ul className="nav-links">
+      <li>
+          <Link to="/">Home</Link>
+        </li>
         <li>
           <Link to="/addEvent">Add Event</Link>
         </li>
@@ -34,9 +37,7 @@ const Navbar = () => {
         <li>
           <Link to="/getEvents">Event Description</Link>
         </li>
-        <li>
-          <Link to="/DeleteEvents">update Events</Link>
-        </li>
+       
        
       </ul>
 
@@ -48,6 +49,9 @@ const Navbar = () => {
         }
       >
         <ul className="mobile-nav-links">
+        <li>
+          <Link to="/"onClick={handleNav}>Home</Link>
+        </li>
           <li>
             <Link to="/addEvent" onClick={handleNav}>
             Add Event
