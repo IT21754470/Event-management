@@ -1,0 +1,72 @@
+.addEvent {
+    margin: 50px auto;
+    width: 500px;
+    padding: 30px;
+    background-color: #cdd7db;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Arial', sans-serif;
+}
+
+.addEvent .title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.addEvent .form {
+    margin-bottom: 20px;
+}
+
+.addEvent label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+}
+
+.addEvent .form-control {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.addEvent .btn-add {
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #2439b4;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+
+
+.addEvent ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.addEvent ul li {
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+.addEvent .button-container {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .addEvent .button2 {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }

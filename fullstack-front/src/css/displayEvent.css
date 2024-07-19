@@ -1,0 +1,54 @@
+.displayEvent {
+    margin: 50px auto;
+    width: 80%;
+    text-align: center;
+    font-family: Arial, sans-serif;
+  }
+  
+  .displayEvent .title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .eventTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+  }
+  
+  .eventTable th,
+  .eventTable td {
+    padding: 10px;
+    border: 1px solid #5b5555;
+  }
+  
+  .eventTable th {
+    background-color: #776f6f;
+    font-weight: bold;
+  }
+  .buttons{
+    margin-top: 10px;
+    margin-right:12px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #18266e;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
+
+  .buttons2{
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #ed2310;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
+  
