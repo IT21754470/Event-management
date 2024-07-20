@@ -19,6 +19,7 @@ public class Event {
     private String description;
     private Date date;
     private String location;
+   
 
     @ElementCollection
     private List<String> attendees;
@@ -70,4 +71,6 @@ public class Event {
     public void setAttendees(List<String> attendees) {
         this.attendees = attendees;
     }
+
+  
 }

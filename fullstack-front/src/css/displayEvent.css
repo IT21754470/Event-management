@@ -51,4 +51,16 @@
     cursor: pointer;
     
   }
+
+  .buttons3{
+    margin-top: 10px;
+    padding: 8px 15px;
+    font-size: 16px;
+    background-color: #18cc54;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    
+  }
   

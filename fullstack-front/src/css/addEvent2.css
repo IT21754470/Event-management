@@ -1,0 +1,40 @@
+.container{
+    font-family: Arial, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+
+.container2{
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    max-width: 500px;
+    padding: 50px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.title{
+    color: #343a40;
+    margin-bottom: 20px;
+}
+
+.list{
+    list-style-type: none;
+    padding: 0;
+}
+.list2{
+    background-color: #91b6dc;
+    color: #000000;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.li span {
+    font-weight: bold;
+  }

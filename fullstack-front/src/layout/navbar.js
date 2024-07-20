@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
 import { AiOutlineClose, AiOutlineMenu } from 'react-icons/ai';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../css/navbar.css';
 
 const Navbar = () => {
   const [navOpen, setNavOpen] = useState(false);
+  const navigate=useNavigate();
 
   const handleNav = () => {
     setNavOpen(!navOpen);
   };
-
+  const handlechange = () => {
+    navigate('/addAttendee')
+ 
+   }
   return (
     <div className="navbar">
       <h1 className="logo">Event Managment</h1>
@@ -73,7 +77,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="right-corner">
-        <button className="custom-button">Add User</button>
+        <button  onClick={handlechange} className="custom-button">Add User</button>
       </div>
     </div>
   );

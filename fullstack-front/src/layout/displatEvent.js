@@ -1,7 +1,7 @@
 import react from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
-
+import '../css/addEvent2.css';
 const DisplayEvent = () => {
 
     const [events, setEvents] = useState([]);
@@ -27,16 +27,17 @@ const DisplayEvent = () => {
 
     }
     return(
-        <div>
-            <h1>Event List</h1>
+        <div className='container'>
+            <div className='container2'>
+            <h1 className='title'>Event List</h1>
             {filteredEventNames.length=== 0?(
                 <div>No events found</div>
             ) : (
-                <ul>
+                <ul className='list'>
                   {filteredEventNames.map((event)=>(
-                  <li key={event.id}>
+                  <li className='list2'key={event.id}>
 
-            <span>{event.eventName}</span>
+            <span className='span'>{event.eventName}</span>
 
             
                         </li>
@@ -49,6 +50,7 @@ const DisplayEvent = () => {
 
 
 
+        </div>
         </div>
 
     )

@@ -1,9 +1,11 @@
 import React from 'react';
 import axios from 'axios';
 import { useState, useEffect } from 'react';
+import { useParams } from 'react-router-dom';
 import '../css/displayEvent.css';
 
 const DisplayEvent = () => {
+    const { id } = useParams(); 
     const [events, setEvents] = useState([]);
 
     useEffect(()=>{
@@ -18,14 +20,28 @@ const DisplayEvent = () => {
             console.log('fetched events:',response.data);
             setEvents(response.data);
 
+
+            await axios.get(`http://localhost:8080/getEvent/${id}`);
+            console.log('fetched events:',response.data);
+            setEvents(response.data);
+
             
+
+
         }catch(error){
             console.error('Error fetching events:',error);
         }
 
 
     }
+const handleUpdate=(event)=>{
+    window.location.href=`/updateEvent/${event.id}`;
+}
 
+const handleAttendee=(event)=>{
+    window.location.href=`/addAttendee/${event.id}`;
+}
+   
     const handleDelete=async(id)=>{
         try{
             await axios.delete(`http://localhost:8080/deleteEvent/${id}`);
@@ -36,6 +52,8 @@ const DisplayEvent = () => {
         }
 
     }
+
+   
 
 
     return(
@@ -48,7 +66,7 @@ const DisplayEvent = () => {
                         <th>description</th>
                         <th>date</th>
                         <th>location</th>
-                        <th>attendees</th>
+                        <th>Attendees</th>
                         <th>Actions</th>
                         
                     </tr>
@@ -60,12 +78,18 @@ const DisplayEvent = () => {
                     <td>{event.description}</td>
                     <td>{event.date}</td>
                     <td>{event.location}</td>
-                    <td>{event.attendees.join(', ')}</td>
+                    <td>
+                {event.attendees && event.attendees.length > 0
+                  ? event.attendees.join(', ')
+                  : 'No attendees'}
+              </td>
                     <td>{event.status}
                     <td>
-                    <button className='buttons'>Update</button>
+                    <button className='buttons' onClick={() => handleUpdate(event)}>Update</button>
                
                     <button className='buttons2' onClick={()=>handleDelete(event.id)}>delete</button>
+
+                    <button className='buttons3' onClick={()=>handleAttendee(event)}>Register Attendee</button>
                 </td>
 </td>
                     </tr>

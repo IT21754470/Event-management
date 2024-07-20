@@ -9,7 +9,7 @@ const AddEvent = () => {
     description: '',
     date: '',
     location: '',
-    attendees: []
+  
   });
   const [attendees, setAttendeeName] = useState('');
   const [message, setMessage] = useState('');
@@ -46,7 +46,7 @@ const AddEvent = () => {
         description: '',
         date: '',
         location: '',
-        attendees: []
+       
       });
       setMessage('Event successfully registered!');
     } catch (error) {
@@ -77,18 +77,8 @@ const AddEvent = () => {
             <label htmlFor="location">Location</label>
             <input type="text" id="location" className="form-control" value={formData.location} onChange={handleChange} />
           </div>
-          <div className="form-group">
-            <label htmlFor="attendees">Attendees</label>
-            <input type="text" id="attendees" className="form-control" value={attendees} onChange={(e) => setAttendeeName(e.target.value)} />
-            <button type="button" className="btn-add" onClick={handleAddAttendee}>Add Attendee</button>
-          </div>
-          <div className="form-group">
-            <ul>
-              {formData.attendees.map((attendee, index) => (
-                <li key={index}>{attendee}</li>
-              ))}
-            </ul>
-          </div>
+         
+         
           <div className="button-container">
           <button type="submit" className="button2">Add Event</button>
           </div>
