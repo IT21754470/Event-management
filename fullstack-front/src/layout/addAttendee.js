@@ -35,7 +35,7 @@ const Addattendee = () => {
   };
 
   return (
-    <div>
+    <div className="container4">
       <div className="addEvent">
         <h1 className="title">Add Attendee</h1>
         <form onSubmit={handleSubmit}>
