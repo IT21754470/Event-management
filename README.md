@@ -85,11 +85,11 @@ npm start
 ```
 ## API Documentation
 
-The backend exposes the following API endpoints:
-GET /getEvent: Fetch all events
-POST /addEvent: Add a new event
-PUT /updateEvent/{id}: Update event details
-DELETE /deleteEvent/{id}: Delete an event by its ID
-POST /addAttendee/{eventId}: Register an attendee to an event
+- The backend exposes the following API endpoints:
+- GET /getEvent: Fetch all events
+- POST /addEvent: Add a new event
+- PUT /updateEvent/{id}: Update event details
+- DELETE /deleteEvent/{id}: Delete an event by its ID
+- POST /addAttendee/{eventId}: Register an attendee to an event
 
 
