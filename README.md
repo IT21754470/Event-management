@@ -43,15 +43,15 @@ This project is an Event Management System built using React for the frontend an
 ### Prerequisites
 - Java 11 or later
 - Node.js and npm
-- PostgreSQL
+- SQL
 - Git
 
 ### Backend Setup
 
  Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/event-management-system.git
-   cd event-management-system/backend
+   git clone [https://github.com/yourusername/event-management-system.git](https://github.com/IT21754470/Event-management.git)
+   
    ```
 
 
@@ -63,14 +63,15 @@ Configure the SQL database:
 
 
 ```bash
+
 ./mvnw clean install
 ./mvnw spring-boot:run
-Frontend Setup
-Navigate to the frontend directory:
+
 ```
 
+## Frontend Setup
 ```bash
-cd ../frontend
+cd fullstack-front
 Install the dependencies:
 npm install
 ```
@@ -82,7 +83,7 @@ bash
 npm start
 
 ```
-##API Documentation
+## API Documentation
 
 The backend exposes the following API endpoints:
 GET /getEvent: Fetch all events
@@ -92,4 +93,3 @@ DELETE /deleteEvent/{id}: Delete an event by its ID
 POST /addAttendee/{eventId}: Register an attendee to an event
 
 
-Screenshots
