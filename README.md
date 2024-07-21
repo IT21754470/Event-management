@@ -54,7 +54,6 @@ Configure the SQL database:
 -Build and run the Spring Boot application:
 
 
-Copy code
 ```bash
 ./mvnw clean install
 ./mvnw spring-boot:run
@@ -62,7 +61,6 @@ Frontend Setup
 Navigate to the frontend directory:
 ```
 
-Copy code
 ```bash
 cd ../frontend
 Install the dependencies:
