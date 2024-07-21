@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    /* background image */
+    background-image: ('/bg.jpg');
+    color: #333; /* Text color for better readability */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }

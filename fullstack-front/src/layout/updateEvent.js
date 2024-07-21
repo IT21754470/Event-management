@@ -76,7 +76,7 @@ const fetchEvent = async () => {
     <div>
      
       <div className="addEvent">
-        <h1 className="title">Add Event</h1>
+        <h1 className="title">Update Event</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="eventName">Event Name</label>

@@ -9,7 +9,6 @@ const AddEvent = () => {
     description: '',
     date: '',
     location: '',
-  
   });
   const [attendees, setAttendeeName] = useState('');
   const [message, setMessage] = useState('');
@@ -46,7 +45,6 @@ const AddEvent = () => {
         description: '',
         date: '',
         location: '',
-       
       });
       setMessage('Event successfully registered!');
     } catch (error) {
@@ -56,34 +54,54 @@ const AddEvent = () => {
   };
 
   return (
-    <div>
-     
+    <div className="center-container">
       <div className="addEvent">
         <h1 className="title">Add Event</h1>
         <form onSubmit={handleSubmit}>
           <div className="form-group">
             <label htmlFor="eventName">Event Name</label>
-            <input type="text" id="eventName" className="form-control" value={formData.eventName} onChange={handleChange} />
+            <input
+              type="text"
+              id="eventName"
+              className="form-control"
+              value={formData.eventName}
+              onChange={handleChange}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="description">Description</label>
-            <input type="text" id="description" className="form-control" value={formData.description} onChange={handleChange} />
+            <textarea
+              id="description"
+              className="form-control textarea"
+              value={formData.description}
+              onChange={handleChange}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="date">Date</label>
-            <input type="date" id="date" className="form-control" value={formData.date} onChange={handleChange} />
+            <input
+              type="date"
+              id="date"
+              className="form-control"
+              value={formData.date}
+              onChange={handleChange}
+            />
           </div>
           <div className="form-group">
             <label htmlFor="location">Location</label>
-            <input type="text" id="location" className="form-control" value={formData.location} onChange={handleChange} />
+            <input
+              type="text"
+              id="location"
+              className="form-control"
+              value={formData.location}
+              onChange={handleChange}
+            />
           </div>
-         
-         
           <div className="button-container">
-          <button type="submit" className="button2">Add Event</button>
+            <button type="submit" className="button2">Add Event</button>
           </div>
         </form>
-        {message && <p>{message}</p>}
+        {message && <p className="message">{message}</p>}
       </div>
     </div>
   );

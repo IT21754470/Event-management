@@ -62,7 +62,7 @@ const Navbar = () => {
             </Link>
           </li>
           <li>
-            <Link to="/displayEvents" onClick={handleNav}>
+            <Link to="/displayEvent" onClick={handleNav}>
             All Events
             </Link>
           </li>
