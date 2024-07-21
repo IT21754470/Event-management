@@ -1,4 +1,7 @@
 # Event Management System
+
+This project is an Event Management System built using React for the frontend and Spring Boot for the backend, with a PostgreSQL database. The application allows users to manage events, including creating, updating, deleting events, and registering attendees for events.
+
 ## Screenshots
 
 | ![Screenshot (1674)](https://github.com/user-attachments/assets/211de2a0-8f51-4719-9bb3-92ab553dbf4d) | ![Screenshot (1673)](https://github.com/user-attachments/assets/57449421-7ce8-476f-9cda-25f0fec5263b) |
@@ -6,9 +9,6 @@
 | ![Screenshot (1672)](https://github.com/user-attachments/assets/cbe72e5a-bc67-498d-8a55-72b1b57dd44a) | ![Screenshot (1671)](https://github.com/user-attachments/assets/4ad163e2-fb07-47be-90bc-8fbdd0eb05ff) |
 | ![Screenshot (1669)](https://github.com/user-attachments/assets/24a0ae10-f4dd-4d9d-809b-cb728fb225a6) | |
 
-
-
-This project is an Event Management System built using React for the frontend and Spring Boot for the backend, with a PostgreSQL database. The application allows users to manage events, including creating, updating, deleting events, and registering attendees for events.
 
 ## Features
 
