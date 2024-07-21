@@ -46,10 +46,11 @@ const AddEvent = () => {
         date: '',
         location: '',
       });
-      setMessage('Event successfully registered!');
+      alert('Event successfully registered!');
+      window.location.href = '/';
     } catch (error) {
       console.error('Error submitting form:', error);
-      setMessage('Error registering event.');
+      alert('Error registering event.');
     }
   };
 
@@ -101,7 +102,7 @@ const AddEvent = () => {
             <button type="submit" className="button2">Add Event</button>
           </div>
         </form>
-        {message && <p className="message">{message}</p>}
+        
       </div>
     </div>
   );

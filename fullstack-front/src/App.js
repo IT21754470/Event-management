@@ -3,9 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
 import NavBar from './layout/navbar';
 import AddEvent from './layout/addEvent';
-import Header from './layout/header';
-import DisplayEventdetail from './layout/displayEventdetal.js';
-import DisplayEvent from './layout/displatEvent.js';
+import DisplayEventdetail from './layout/eventList.js';
+import DisplayEvent from './layout/allEvents.js';
 import UpdateEvent from './layout/updateEvent.js';
 import Addattendee from './layout/addAttendee.js';
 import Home from './layout/Home';
@@ -20,7 +19,7 @@ function App() {
 <Routes>
 
 
-<Route path="/" element={<Home />} />
+<Route path="/" element={<DisplayEvent />} />
 <Route path="/addEvent" element={<AddEvent />} />
 <Route path="/getEvents" element={<DisplayEventdetail />} />
 <Route path="/displayEvent" element={<DisplayEvent />} />

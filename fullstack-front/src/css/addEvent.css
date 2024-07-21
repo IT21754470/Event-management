@@ -4,17 +4,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 120vh;
+  height: 100vh;
 
 }
 
 
 .addEvent {
-  margin: 60px auto;
+  margin: 50px auto;
   width: 500px;
-  padding: 100px;
-  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
-  border: 1px solid rgba(248, 248, 248, 0.8); /* Semi-transparent border */
+  padding: 30px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid rgba(248, 248, 248, 0.8); 
   font-family: 'Arial', sans-serif;
   animation: fadeIn 0.5s ease-in-out;
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);

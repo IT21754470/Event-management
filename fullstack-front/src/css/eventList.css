@@ -1,0 +1,119 @@
+/* General Styling */
+
+.container3{
+  margin-top: 120px;
+}
+
+.displayEvent {
+    margin:  0 auto;
+    max-width: 1000px;
+    padding: 20px;
+    background-color: rgba(238, 234, 234, 0.9); /* Semi-transparent background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.5s ease-in-out;
+    border-radius: 20px;
+   
+  
+  }
+  
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Table Container Styling */
+  .table-container {
+    max-height: 400px; /* Adjust height as needed */
+    overflow-y: auto; /* Enable vertical scrolling */
+    border: 1px solid #ddd; /* Optional border for better visibility */
+    border-radius: 5px; /* Optional border-radius for better look */
+  }
+  
+  /* Table Styling */
+  .eventTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 0; /* Remove bottom margin to avoid spacing issues */
+  }
+  
+  .eventTable th, .eventTable td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Header Styling */
+  .eventTable th {
+    background-color: #5d8cb4;
+    color: #fff;
+    font-weight: bold;
+    position: sticky; /* Keep header fixed */
+    top: 0; /* Stick the header to the top */
+    z-index: 1; /* Ensure it is above the table body */
+  }
+  
+  /* Row Styling */
+  .eventTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .eventTable tr:hover {
+    background-color: #f1f1f1;
+    cursor: pointer;
+  }
+  
+  /* Button Styling */
+  .buttons, .buttons2, .buttons3 {
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin: 2px;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .buttons {
+    background-color: #28a745;
+  }
+  
+  .buttons:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+  }
+  
+  .buttons2 {
+    background-color: #dc3545;
+  }
+  
+  .buttons2:hover {
+    background-color: #c82333;
+    transform: scale(1.05);
+  }
+  
+  .buttons3 {
+    background-color: #007bff;
+  }
+  
+  .buttons3:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  

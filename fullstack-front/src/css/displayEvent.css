@@ -1,13 +1,14 @@
 /* General Styling */
 .displayEvent {
-  margin: 100px auto;
+  margin-top: 100px;
   max-width: 1000px;
   padding: 20px;
   background-color: rgba(238, 234, 234, 0.9); /* Semi-transparent background */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   animation: fadeIn 0.5s ease-in-out;
   border-radius: 20px;
-  height: 120vh;
+  height: 500vh;
+
 }
 
 
@@ -33,17 +34,17 @@
 
 /* Table Container Styling */
 .table-container {
-  max-height: 400px; 
-  overflow-y: auto; 
-  border: 1px solid #ddd; 
-  border-radius: 5px; 
+  max-height: 400px; /* Adjust height as needed */
+  overflow-y: auto; /* Enable vertical scrolling */
+  border: 1px solid #ddd; /* Optional border for better visibility */
+  border-radius: 5px; /* Optional border-radius for better look */
 }
 
 /* Table Styling */
 .eventTable {
   width: 100%;
   border-collapse: collapse;
-  margin-bottom: 0; 
+  margin-bottom: 0; /* Remove bottom margin to avoid spacing issues */
 }
 
 .eventTable th, .eventTable td {
@@ -75,7 +76,7 @@
 /* Button Styling */
 .buttons, .buttons2, .buttons3 {
   border: none;
-  color: #fff9f9;
+  color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;

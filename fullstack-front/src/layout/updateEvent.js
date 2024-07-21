@@ -65,15 +65,17 @@ const fetchEvent = async () => {
       });
      console.log(response.data);
      
-      setMessage('Event successfully registered!');
+      alert('Event successfully updated!');
+      //go to home page
+      window.location.href = '/';
     } catch (error) {
       console.error('Error submitting form:', error);
-      setMessage('Error updating event.');
+      alert('Error updating event.');
     }
   };
 
   return (
-    <div>
+    <div className="center-container">
      
       <div className="addEvent">
         <h1 className="title">Update Event</h1>
@@ -100,7 +102,7 @@ const fetchEvent = async () => {
           <button type="submit" className="button2">update Event</button>
           </div>
         </form>
-        {message && <p>{message}</p>}
+        
       </div>
     </div>
   );

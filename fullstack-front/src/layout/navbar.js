@@ -32,14 +32,12 @@ const Navbar = () => {
       <li>
           <Link to="/">Home</Link>
         </li>
+      
         <li>
-          <Link to="/addEvent">Add Event</Link>
+          <Link to="/addEvent">Add Events</Link>
         </li>
         <li>
-          <Link to="/displayEvent">All Events</Link>
-        </li>
-        <li>
-          <Link to="/getEvents">Event Description</Link>
+          <Link to="/getEvents">Event List</Link>
         </li>
        
        
@@ -56,19 +54,15 @@ const Navbar = () => {
         <li>
           <Link to="/"onClick={handleNav}>Home</Link>
         </li>
+         
           <li>
             <Link to="/addEvent" onClick={handleNav}>
-            Add Event
-            </Link>
-          </li>
-          <li>
-            <Link to="/displayEvent" onClick={handleNav}>
-            All Events
+            Add Events
             </Link>
           </li>
           <li>
             <Link to="/getEvents" onClick={handleNav}>
-          Events description
+          Events List
           </Link>
           </li>
          
@@ -77,7 +71,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="right-corner">
-        <button  onClick={handlechange} className="custom-button">Add User</button>
+        
       </div>
     </div>
   );
